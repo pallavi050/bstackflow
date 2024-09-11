@@ -10,9 +10,9 @@ public class UtilClass extends Testbase{
 	
 	//-----------------------drop down------------------
 	
-		public static void selectOptionFromDropdownWithIndex(WebElement element,int index)
-		{
-			Select s=new Select(element);
-		  s.selectByIndex(index);
-		}
+	public static void selectOptionFromDropdownWithVisibleText(WebElement element,String text)
+	{
+		Select s=new Select(element);
+	  s.selectByVisibleText(text);
+	}
 }
