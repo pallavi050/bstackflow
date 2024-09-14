@@ -17,8 +17,9 @@ public class LoginTest extends Testbase{
 		Thread.sleep(2000);
 		LoginPage loginpage_obj=new LoginPage(driver);
 		Thread.sleep(2000);
-		loginpage_obj.enterUsername("demouser");
-		loginpage_obj.enterPass("testingisfun99");
+		loginpage_obj.enterUsername();   //"demouser"
+		loginpage_obj.enterPass();      //"testingisfun99"
+		loginpage_obj.clickOnLoginBtn();
 		
 	}
 }
